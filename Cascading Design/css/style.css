@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "Dancing";
+    src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Hand";
+    src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Righteous";
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);
+}
+
+
+.logo{
+    width: 90px;
+    height: 100px;
+    background-image: url(/images/logo.png);
+}
+
+body{
+    font-family: "Hand";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    background-color: #BFCBA8;
+}
+
+/*Global*/
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.button-1{
+    height: 35px;
+    background-color: #FFB22C;
+    border: none;
+    color: black;
+    font-family: Righteous;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dark{
+    padding: 15px;
+    background-color: #3d3425;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*Global*/
+
+
+header{
+    background-color:#464F41 ;
+    color: azure;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #5B8A72 3px solid;
+    font-family: "Dancing";
+    font-size: 30px;
+}
+
+header a{
+    color: azure;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Righteous";
+    
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brandingf{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+#branding {
+    display: flex;
+    align-items: center; /* Vertically center logo and heading */
+    gap: 20px; /* Optional: space between logo and heading */
+}
+
+header .highlight, header .current a{
+    color: #FFB22C;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #ffdea5;
+    font-weight: bold;
+}
+
+/*Showcase*/
+#showcase{
+    min-height: 600px;
+    background: url("/images/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+    opacity: 95%;
+}
+#showcase h1{
+    margin-top: 200px;
+    font-size: 55px;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+    color: rgb(125, 231, 231);
+    opacity: 85%;
+    font-family: "Righteous";
+}
+
+#showcase p{
+    font-size: 20px;
+    line-height: 1.8em;
+    color: rgb(131, 167, 199);
+}
+
+/*NewsLetter*/
+
+#newsletter{
+    padding: 15px;
+    background-color: #464F41 ;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 10px;
+}
+
+#newsletter input[type="email"]{
+    padding: 5px;
+    margin-right: 5px;
+    height: 25px;
+    width: 250px;
+    border-radius: 4px;
+    
+}
+
+/*Boxes*/
+
+#boxes{
+    margin-top: 20px ;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 25px;
+    text-align: center;
+}
+#boxes .box img{
+    width: 500px;
+    height: 360px;
+}
+
+#boxes .box h2{
+    color: black;
+}
+
+#boxes .box p{
+    color: rgb(53, 53, 53);
+}
+
+/*Sidebar*/
+
+#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/*main-col*/
+
+#main-col{
+    float: left;
+    width: 65% ;
+}
+
+#span-1{
+   font-size: 35px;
+   font-weight: bold;
+}
+
+/*Services*/
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #5B8A72 1px solid;
+    margin-bottom: 5px;
+    background-color: #3d3425;
+}
+
+
+.page-title{
+    font-size: 35px;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 20px;
+    color: aliceblue;
+    background-color: #464F41;
+    text-align: center;
+}
+
+/*Media Queries*/
+@media (max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #branding{
+        line-height: 2em;
+    }
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
